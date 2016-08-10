@@ -1,0 +1,303 @@
+html{
+	margin: 0;
+	padding: 0;
+}
+body{
+	margin: 0;
+	padding: 0;
+	background-color: black;
+	overflow: hidden;
+
+}
+.herad{
+	width: 100%;
+	height: 630px;
+	background: url("../images/bgimage.jpg");
+	position: absolute;
+	top: 0;
+
+}
+.d{
+	width: 210px;
+	height: 210px;
+	margin: 200px auto;
+}
+.top,.center{
+	width: 210px;
+	height: 210px;
+	margin: 0 auto;
+	position:absolute;
+	
+	
+}
+
+.top img:nth-child(1){
+	width:210px;
+	height: 210px;
+	float: left;
+	animation: run 2s reverse;
+
+}
+.top img:nth-child(2){
+	height: 210px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	animation: left 2s reverse;
+}
+.top img:nth-child(3){
+	height: 120px;
+	width: 212px;
+	position: absolute;
+	top: 90px;
+	left: -2px;
+	animation: box 2s reverse;
+}
+.top img:nth-child(4){
+	float: left;
+	height: 60px;
+		position: absolute;
+	top: 75px;
+	left: 0;
+	animation: top 2s reverse;
+}
+.top img:nth-child(5){
+	float: left;
+	height: 100px;
+		position: absolute;
+	top: 54px;
+	left: 54px;
+	animation: box2 2s reverse;
+}
+.top img:nth-child(6){
+	float: left;
+	height: 100px;
+	width: 150px;
+		position: absolute;
+	top: 110px;
+	left: 60px;
+	animation: box1 2s reverse;
+}
+.top img:nth-child(7){
+	float: left;
+	height:30px;
+		position: absolute;
+	top: 80px;
+	left: 58px;
+	animation: box2 2s reverse;
+}
+.top img:nth-child(8){
+	float: left;
+	height:105px;
+	position: absolute;
+	top: 2;
+	left: 120px;
+	animation: topa  2s reverse;
+}
+.top img:nth-child(9){
+	float: left;
+	height:175px;
+		position: absolute;
+	top: 0;
+	left: 91px;
+	animation: topa  2s reverse;
+}
+.center img:nth-child(1){
+	float: left;
+	height:130px;
+		position: absolute;
+	top: 75px;
+	left: 55px;
+}
+.center img:nth-child(2){
+	float: left;
+	height:50px;
+	position: absolute;
+	top: 80px;
+	left: 8px;
+}
+.center img:nth-child(3){
+	float: left;
+	height:30px;
+	width: 30px;
+	position: absolute;
+	top: 180px;
+	left: 65px;
+}
+.center img:nth-child(4){
+	float: left;
+	height:30px;
+	width: 25px;
+	position: absolute;
+	top: 180px;
+	left: 95px;
+}
+.center img:nth-child(5){
+	float: left;
+	height:30px;
+	width: 25px;
+	position: absolute;
+	top: 180px;
+	left: 125px;
+}
+.center img:nth-child(6){
+	float: left;
+	height:30px;
+	width: 20px;
+	position: absolute;
+	top: 180px;
+	left: 155px;
+}
+.center img:nth-child(7){
+	float: left;
+	height:30px;
+	width: 25px;
+	position: absolute;
+	top: 180px;
+	left: 185px;
+}
+.zt{
+	font-size: 35px;
+	color: white;
+	position: absolute;
+	bottom: 80px;
+	left: 47%;
+}
+.zt2{
+	font-size: 35px;
+	color: white;
+	position: absolute;
+	bottom: 40px;
+	left: 44%;
+}
+.next{
+	position: absolute;
+	width: 45px;
+	bottom: 30px;
+	left: 47%;
+	animation: up 0.9s ease infinite;
+}
+.music{
+	position: absolute;
+	bottom: 25px;
+	right: 2%;
+	animation: fei4 2s linear infinite;
+}
+audio{
+	position: absolute;
+	z-index: 1;
+}
+@keyframes far{
+	
+	20%{
+		opacity: 0.5;
+	}
+	100%{
+		transform: scale(6,6);
+		opacity: 0;
+	}
+}
+.center{
+	animation: far 2.5s ease reverse ;
+}
+@keyframes far{
+	
+	20%{
+		opacity: 0.5;
+	}
+	100%{
+		transform: scale(6,6);
+		opacity: 0;
+	}
+}
+.star{
+	position: absolute;
+	width:80px;
+	height: 80px;
+	top:300px;
+	right: 200px;
+	animation: fei 2s ease reverse infinite;
+	opacity: 0;
+
+}
+.star2{
+	position: absolute;
+	width: 80px;
+	height: 80px;
+	top: 100px;
+	left: 500px;
+	animation: fei2 2s ease reverse infinite;
+
+}
+.star3{
+	position: absolute;
+	width: 80px;
+	height: 80px;
+	top: 100px;
+	right:500px;
+	animation: fei3 2s ease reverse infinite;
+	opacity: 0;
+}
+@keyframes run {
+	to{
+		transform: translateX(300px);
+	}
+}
+@keyframes left {
+	to{
+		transform: translateX(-300px);
+	} 
+}
+@keyframes top {
+	to{
+		transform: translate(250px,-550px);
+	}
+}
+@keyframes topa {
+	to{
+		transform: translate(200px,-300px);
+	}
+}
+@keyframes box {
+	to{
+		transform: translateY(700px);
+	}
+}
+@keyframes box1 {
+	to{
+		transform: translate(200px,200px);
+	}
+}
+@keyframes box2 {
+	to{
+		transform: translate(200px,-400px);
+	}
+}
+@keyframes up {
+	50%{
+		transform: translateY(3px);
+	}
+}
+@keyframes fei {
+	to{
+		transform: translate(300px,-500px);opacity: 1;
+	}
+}
+@keyframes fei2 {
+	to{
+		transform: translate(-500px,-800px);
+	}
+}
+@keyframes fei3 {
+	to{
+		transform: translate(700px,200px);
+		opacity: 1;
+	}
+}
+
+@keyframes fei4 {
+	to{
+		transform: rotateZ(360deg);
+	}
+}
+
